@@ -23,7 +23,7 @@ body{
     height: 700px;
     width: 700px;
     margin: 50px;
-    border: solid red 15px;
+    border: solid red 40px;
     border-radius: 15px;
     display: inline-grid;
     grid-template-columns: repeat(64, 2fr);
@@ -40,11 +40,21 @@ body{
 
 
 button{
-    height: 50px;
-    width: 95px;
+    height: 70px;
+    width: 120px;
     font: 800;
     font-size: 24px;
     margin-top: 0px;
     margin-bottom: 20px;
+    margin: 0px 20px 20px 20px;
     border-radius: 5px;
+    border: 3px solid black;
+    background-color: red;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.button-container{
+    display: flex;
+
 }
