@@ -62,8 +62,25 @@ function UpdateGrid(){
    gridContainer.style.gridTemplateColumns= ` repeat(${newGridSizestyle}, 2fr)`
    gridContainer.style.gridTemplateRows= ` repeat(${newGridSizestyle}, 2fr)`
 
+   const squares = document.querySelectorAll(".grid")
 
-   console.log(newGridSizestyle)
+    squares.forEach((square) => {
+    square.addEventListener("mouseover",() =>{
+        square.classList.add("colored")
+    } )
+})
+
+const resetButton = document.querySelector("#reset-btn")
+
+function Resetgrid2(){
+    squares.forEach((square) => {
+            square.classList.remove("colored")
+        } )
+}
+
+    resetButton.onclick = Resetgrid2
+   
+console.log(newGridSizestyle)
 }
 
 changeButton.onclick = UpdateGrid
